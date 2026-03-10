@@ -5,8 +5,8 @@ import io
 
 st.title("Interview → ElevenLabs Audio Generator")
 
-api_key = st.text_input("ElevenLabs API key", type="password")
-voice_id = st.text_input("Voice ID")
+api_key = st.secrets["ELEVEN_API_KEY"]
+voice_id = st.secrets["VOICE_ID"]
 
 text = st.text_area("Paste your interview text")
 
